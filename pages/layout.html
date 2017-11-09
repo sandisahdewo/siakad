@@ -1,0 +1,60 @@
+<html class="android android-4 android-4-4">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>tampil2</title>
+    <link rel="stylesheet" href="../dist/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="../dist/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="../dist/css/framework7-icons.css">
+</head>
+<body>
+    <div class = "panel-overlay"></div>
+    <div class = "panel panel-left panel-reveal layout-white">
+        <div class = "content-block">
+            <p><a href = "#"><i class="f7-icons size-22 color-gray">person</i> <span class="color-gray"> Data Mahasiswa</span></a></p>
+            <p><a href = "#"><i class="f7-icons size-22 color-gray">drawers_fill</i> <span class="color-gray"> Nilai Perkuliahan</span></a></p>
+            <p><a href = "#"><i class="f7-icons size-22 color-gray">time</i> <span class="color-gray"> Jadwal Perkuliahan</span></a></p>
+            <p><a href = "#"><i class="f7-icons size-22 color-gray">star_fill</i> <span class="color-gray"> Kehadiran & Kompen</span></a></p>
+            <p><a href = "#"><i class="f7-icons size-22 color-gray">document_text_fill</i> <span class="color-gray"> Kartu Hasil Studi</span></a></p>
+            <p><a href = "#"><i class="f7-icons size-22 color-red">logout</i> <span class="color-red"> Logout</span></a></p>
+        </div>
+    </div>
+    <div class = "views">
+        <div class = "view view-main">
+            <div class = "pages">
+                <div data-page = "home" class = "page navbar-fixed">
+                <div class = "navbar  bg-blue">
+                    <div class = "navbar-inner">
+                        <div class = "left">
+                            <p> <a href = "#" class = "open-left-panel"><i class="f7-icons color-white">menu</i></a></p>
+                        </div>
+                        <div class = "center color-white">Mahasiswa</div>
+                        <div class = "right"> </div>
+                    </div>
+                </div>
+                <div class = "page-content">
+                    <div class = "content-block">
+
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../dist/js/framework7.min.js"></script>
+<script>
+    var myApp = new Framework7();
+    var $$ = Dom7;
+
+    $$('.open-left-panel').on('click', function (e) {
+    myApp.openPanel('left');
+    });
+
+    $$('.panel-close').on('click', function (e) {
+    myApp.closePanel();
+    });
+</script>
+</html>
